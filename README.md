@@ -1,4 +1,4 @@
-# 'regress': an R package for Gaussian linear models with linear covariance structure
+# '''regress''': an R package for Gaussian linear models with linear covariance structure
 
 ## Installation
 ## Installation
