@@ -1,0 +1,30 @@
+ citHeader("To cite package 'regress' in publications use:")
+     
+     ## R >= 2.8.0 passes package metadata to citation().
+     if(!exists("meta") || is.null(meta)) meta <- packageDescription("regress")
+     year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
+     vers <- paste("R package version", meta$Version)
+     
+     citEntry(entry="Manual",
+              title = "The regress package",
+              author = personList(as.person("David Clifford"),
+                                  as.person("Peter McCullagh")),
+              year = year,
+              note = vers,
+     
+              textVersion =
+              paste("David Clifford, Peter McCullagh (",year,
+                    "). The regress package ", vers, ".", sep=""))
+
+citEntry(entry="Article",
+title="The regress function",
+author = personList(as.person("David Clifford"),
+as.person("Peter McCullagh")),
+journal = "R News",
+year = 2006,
+volume = 6,
+number = 2,
+pages = c(6,10),
+month = "May",
+textVersion = "David Clifford, Peter McCullagh (2006), The regress function, R News 6:2, 6-10")
+

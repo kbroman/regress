@@ -1,0 +1,4 @@
+S3method(print,regress)
+S3method(summary,regress)
+export(regress,BLUP)
+import(stats)
