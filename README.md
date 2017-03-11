@@ -1,7 +1,6 @@
 # An R package for Gaussian linear models with linear covariance structure
 
 ## Installation
-## Installation
 Please install the package in R directly using the commands:
 
 ```R
