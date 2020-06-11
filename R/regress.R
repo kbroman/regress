@@ -144,7 +144,7 @@ regress <- function(formula, Vformula, identity=TRUE, kernel=NULL,
       Vformula <- as.character(Vformula)
       Vformula[1] <- "~"
       Vformula[2] <- paste(Vformula[2],"+In")
-      Vformula <- as.formula(Vformula)
+      Vformula <- as.formula(paste(Vformula, collapse=" "))
   }
 
   model <- c(model,V)
@@ -531,7 +531,7 @@ regress <- function(formula, Vformula, identity=TRUE, kernel=NULL,
 
   names(sigma) <- Vcoef.names
   sigma.cov <- try(ginv(FI.c),silent=TRUE)
-  error1 <- (class(sigma.cov)=="try-error")
+  error1 <- ("try-error" %in% class(sigma.cov))
   if(error1) {
     cat("Warning: solution lies on the boundary; check sigma & pos\nNo standard errors for variance components returned\n")
     sigma.cov <- matrix(NA,k,k)

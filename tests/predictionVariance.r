@@ -1,3 +1,5 @@
+library(regress)
+
 ## Example of prediction variance computations
 
 ## Predictions
