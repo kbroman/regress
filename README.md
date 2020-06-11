@@ -1,5 +1,6 @@
 # An R package for Gaussian linear models with linear covariance structure
 
+[![Travis build status](https://travis-ci.com/kbroman/regress.svg?branch=master)](https://travis-ci.com/kbroman/regress)
 ## Installation
 Please install the package in R directly using the commands:
 
