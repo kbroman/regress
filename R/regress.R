@@ -144,7 +144,7 @@ regress <- function(formula, Vformula, identity=TRUE, kernel=NULL,
       Vformula <- as.character(Vformula)
       Vformula[1] <- "~"
       Vformula[2] <- paste(Vformula[2],"+In")
-      Vformula <- as.formula(Vformula)
+      Vformula <- as.formula(paste(Vformula, collapse=" "))
   }
 
   model <- c(model,V)
