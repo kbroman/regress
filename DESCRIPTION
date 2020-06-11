@@ -15,6 +15,6 @@ Description: Functions to fit Gaussian linear model by maximising the
         random effects models. We've added the ability to fit models
         using any kernel as well as a function to return the mean and
         covariance of random effects conditional on the data (BLUPs).
-License: GPL 2 | file LICENSE
+License: GPL-2
 URL: http://www.csiro.au
 Suggests: nlme, MASS
