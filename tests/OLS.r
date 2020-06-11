@@ -1,3 +1,5 @@
+library(regress)
+
 ## Example of ordinary least squares
 
 x <- rep(1,15)
