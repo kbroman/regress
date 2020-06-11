@@ -16,5 +16,6 @@ Description: Functions to fit Gaussian linear model by maximising the
         using any kernel as well as a function to return the mean and
         covariance of random effects conditional on the data (BLUPs).
 License: GPL-2
-URL: http://www.csiro.au
+URL: https://github.com/kbroman/regress
+BugReports: https://github.com/kbroman/regress/issues
 Suggests: nlme, MASS

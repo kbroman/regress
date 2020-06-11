@@ -3,9 +3,9 @@
 ## Installation
 Please install the package in R directly using the commands:
 
-```R
+```r
 install.packages("devtools")
-devtools::install_github("david-clifford/regress")
+devtools::install_github("kbroman/regress")
 ```
 
 ## References
