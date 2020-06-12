@@ -11,7 +11,7 @@ BLUP <- function(model,RE=NULL) {
 
     if(length(RE)==0) RE <- setdiff(model$Vnames,"In")
     if(any(is.na(match(RE,model$Vnames)))) stop(paste("RE should be a subset of",model$Vnames))
-    if(class(model)!="regress") stop("model should be of class regress")
+    if(!inherits(model, "regress")) stop("model should be of class regress")
 
     ## conditional expected values - all of them
     Wy <- model$W %*% (model$model[[1]] - model$fitted)
