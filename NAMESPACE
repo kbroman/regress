@@ -2,4 +2,4 @@ S3method(print,regress)
 S3method(summary,regress)
 export(regress,BLUP)
 importFrom("stats", "as.formula", "model.frame", "model.matrix",
-           "model.response", "na.pass", "nobs", "optimize", "var")
+           "model.response", "na.pass", "optimize", "var")

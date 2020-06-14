@@ -326,7 +326,7 @@ regress <- function(formula, Vformula, identity=TRUE, kernel=NULL,
       eig <- sort(eigen(WQK,symmetric=TRUE,only.values=TRUE)$values, decreasing=TRUE)[1:rankQK]
       if(any(eig < 0)){
           cat("error: Sigma is not positive definite on contrasts: range(eig)=", range(eig), "\n")
-          WQK <- WQK + (tol - min(eig))*diag(nobs)
+          WQK <- WQK + (tol - min(eig))*diag(n)
           eig <- eig + tol - min(eig)
       }
       ldet <- sum(log(eig))
