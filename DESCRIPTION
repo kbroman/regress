@@ -1,6 +1,6 @@
 Package: regress
-Version: 1.3-20
-Date: 2020-06-12
+Version: 1.3-21
+Date: 2020-06-17
 Title: Gaussian Linear Models with Linear Covariance Structure
 Authors@R: c(person("David", "Clifford", role=c("aut", "cre")),
              person("Peter", "McCullagh", role=c("aut", "cre")),
