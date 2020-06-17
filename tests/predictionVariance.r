@@ -24,6 +24,7 @@ pred.w.plim2 <- with(model,cbind(fitted,t(hwid)+as.vector(fitted)))
 ## Test if predictions and prediction intervals are the same
 if(sum((pred.w.plim - pred.w.plim2)^2) + sum((pred.w.clim - pred.w.clim2^2)) > 1e-10) stop("Error with prediction variances")
 
+old_mfrow <- par("mfrow")
 par(mfrow=c(1,1))
 matplot(new$x,cbind(pred.w.clim, pred.w.plim[,-1]),
         lty=c(1,2,2,3,3), type="l", ylab="predicted y",lwd=3)
@@ -40,3 +41,5 @@ lines(x,model$fitted+two*sqrt(model$predictedVariance+model$predictedVariance2))
 ## Test if predictions and prediction intervals are the same
 if(sum((pred.w.plim - pred.w.plim2)^2) + sum((pred.w.clim - pred.w.clim2^2)) > 1e-10) stop("Error with prediction variances")
 
+## reset mfrow
+par(mfrow=old_mfrow)
