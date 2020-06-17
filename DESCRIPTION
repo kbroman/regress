@@ -18,7 +18,10 @@ Description: Functions to fit Gaussian linear model by maximising the
         Sherman Morrison Woodbury identities for matrix inversion in
         random effects models. We've added the ability to fit models
         using any kernel as well as a function to return the mean and
-        covariance of random effects conditional on the data (BLUPs).
+        covariance of random effects conditional on the data (best
+        linear unbiased predictors, BLUPs).
+        Clifford and McCullagh (2006)
+        <https://www.r-project.org/doc/Rnews/Rnews_2006-2.pdf>.
 License: GPL-2
 URL: https://github.com/kbroman/regress
 BugReports: https://github.com/kbroman/regress/issues
