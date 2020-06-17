@@ -26,3 +26,5 @@ License: GPL-2
 URL: https://github.com/kbroman/regress
 BugReports: https://github.com/kbroman/regress/issues
 Suggests: nlme, MASS
+Encoding: UTF-8
+ByteCompile: true
