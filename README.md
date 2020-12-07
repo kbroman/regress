@@ -4,11 +4,10 @@
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/regress)](https://cran.r-project.org/package=regress)
 
 ## Installation
-Please install the package in R directly using the commands:
+Install the package from [CRAN](https://cran.r-project.org/package=regress):
 
 ```r
-install.packages("devtools")
-devtools::install_github("kbroman/regress")
+install.packages("regress")
 ```
 
 ## References
