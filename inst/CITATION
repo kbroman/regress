@@ -7,8 +7,8 @@ citHeader("To cite package 'regress' in publications use:")
 
      citEntry(entry="Manual",
               title = "The regress package",
-              author = personList(as.person("David Clifford"),
-                                  as.person("Peter McCullagh")),
+              author = c(person("David", "Clifford"),
+                         person("Peter", "McCullagh")),
               year = year,
               note = vers,
 
@@ -18,8 +18,8 @@ citHeader("To cite package 'regress' in publications use:")
 
 bibentry(bibtype="Article",
          title="The regress function",
-         author = personList(as.person("David Clifford"),
-                             as.person("Peter McCullagh")),
+         author = c(person("David", "Clifford"),
+                    person("Peter", "McCullagh")),
          journal = "R News",
          year = 2006,
          volume = 6,
