@@ -1,6 +1,6 @@
 # An R package for Gaussian linear models with linear covariance structure
 
-[![R build status](https://github.com/kbroman/regress/workflows/R-CMD-check/badge.svg)](https://github.com/kbroman/regress/actions)
+[![R-CMD-check](https://github.com/kbroman/regress/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kbroman/regress/actions/workflows/R-CMD-check.yaml)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/regress)](https://cran.r-project.org/package=regress)
 
 ## Installation
